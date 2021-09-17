@@ -1,2 +1,2 @@
 # sprin-config-in-yml
-estudos com Spring
+Estudos com Spring.
