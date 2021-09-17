@@ -1,0 +1,9 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-config-in-yml
+greeting-service:
+  greeting : "Olá"
+  default-value : "mundo - seu lindo!"
+  
