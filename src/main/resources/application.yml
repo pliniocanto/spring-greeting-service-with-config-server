@@ -3,6 +3,15 @@ server:
 spring:
   application:
     name: spring-config-in-yml
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - 'env'
+        - 'beans'
+        #- '*'
+        # https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
 greeting-service:
   greeting : "Olá"
   default-value : "mundo - seu lindo!"
