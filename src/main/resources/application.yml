@@ -2,17 +2,26 @@ server:
   port: 8080
 spring:
   application:
-    name: spring-config-in-yml
+    name: greeting-service
+  config:
+    import:
+    - optional:configserver:http://localhost:8888
+  cloud:
+    config:
+      profile: prod
 management:
   endpoints:
     web:
       exposure:
         include:
-        - 'env'
-        - 'beans'
-        #- '*'
+        - '*'
+        #- 'refresh'
+        #- 'env'
+        #- 'beans'
         # https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
-greeting-service:
-  greeting : "Olá"
-  default-value : "mundo - seu lindo!"
+        
+# commented due spring config server        
+#greeting-service:
+#  greeting : "Olá"
+#  default-value : "mundo - seu lindo!"
   

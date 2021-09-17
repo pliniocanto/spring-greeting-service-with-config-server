@@ -1,2 +1,2 @@
-# sprin-config-in-yml
+# spring-config-in-yml
 Estudos com Spring.
